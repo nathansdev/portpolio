@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/android_developer"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_person_outline_black_24dp"
+        android:gravity="left|center"
+        android:text="@string/profile"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/profession" />
+
+    <TextView
+        android:id="@+id/experience"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:drawableLeft="@drawable/ic_outline_work_outline_24px"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_outline_work_outline_24px"
+        android:gravity="left|center"
+        android:text="@string/experience"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/profile" />
+
+    <TextView
+        android:id="@+id/apps"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:drawableLeft="@drawable/ic_apps_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_apps_black_24dp"
+        android:gravity="left|center"
+        android:text="@string/apps"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/experience" />
+
+    <TextView
+        android:id="@+id/resume"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:drawableLeft="@drawable/ic_resume"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_resume"
+        android:gravity="left|center"
+        android:text="@string/resume"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/apps" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+        android:gravity="left|center"
+        android:text="@string/contact"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/resume" />
+</android.support.constraint.ConstraintLayout>
